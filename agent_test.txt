@@ -1,0 +1,2 @@
+# Agent Mode Test
+This is a test to see if I can write to the new directory.
