@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import { gsap } from 'gsap';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TelemetryHUD from './components/TelemetryHUD';
