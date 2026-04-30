@@ -19,6 +19,19 @@ const Hero = () => {
               Start Tracking
             </button>
           </div>
+          
+          <div className="mt-8 relative group">
+            <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+              <svg className="w-5 h-5 text-on-surface/40 group-focus-within:text-glow-red transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <input 
+              type="text" 
+              placeholder="Search 2026 Regulations, Drivers, or Teams..." 
+              className="w-full max-w-md bg-surface-container/20 backdrop-blur-xl border border-white/10 rounded-full py-4 pl-12 pr-6 text-on-surface placeholder:text-on-surface/30 focus:outline-none focus:border-glow-red/50 focus:ring-1 focus:ring-glow-red/50 transition-all"
+            />
+          </div>
         </div>
 
         {/* Live Countdown HUD */}

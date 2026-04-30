@@ -7,16 +7,16 @@ const TelemetryHUD = () => (
           Technical <br/><span className="text-secondary-container">Integration</span>
         </h2>
         <p className="font-body text-sm text-on-surface/60 leading-relaxed">
-          Analyze live telemetry data and seasonal performance metrics across the entire 2024 grid. 
-          Our kinetic precision engine updates every millisecond.
+          Analyze live telemetry data and seasonal performance metrics across the entire 2026 grid. 
+          Our kinetic precision engine monitors the 50/50 PU split and active aero modes in real-time.
         </p>
       </div>
       <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
         {[
-          { label: 'Reliability Index', value: '94.2%', progress: 94, color: 'bg-secondary-container' },
-          { label: 'Avg Pit Stop', value: '2.23s', progress: 82, color: 'bg-primary-container' },
-          { label: 'Aero Efficiency', value: '8.4 CD', progress: 88, color: 'bg-secondary-container' },
-          { label: 'Thermal Load', value: '104°C', progress: 65, color: 'bg-primary-container' },
+          { label: 'Hybrid Deployment', value: '350kW', progress: 95, color: 'bg-secondary-container' },
+          { label: 'Active Aero Status', value: 'X-MODE', progress: 100, color: 'bg-primary-container' },
+          { label: 'Energy Recovery', value: '8.5MJ', progress: 85, color: 'bg-secondary-container' },
+          { label: 'Fuel Flow Rate', value: '100%', progress: 100, color: 'bg-primary-container' },
         ].map((stat) => (
           <div key={stat.label} className="space-y-2">
             <span className="font-label text-[10px] uppercase tracking-widest text-on-surface/40">{stat.label}</span>

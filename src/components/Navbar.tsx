@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-8 py-4 w-full max-w-[1440px] mx-auto">
         <div className="text-2xl font-black text-[#E10600] tracking-tighter font-headline cursor-pointer">F1 KINETIC</div>
         <div className="hidden md:flex items-center gap-8">
-          {['Home', 'Teams', 'Schedule', 'Stats', 'Highlights'].map((item) => (
+          {['Home', 'Teams', 'Drivers', 'Schedule', 'Maps', 'Regulations', 'Stats'].map((item) => (
             <a 
               key={item}
               className="font-headline uppercase tracking-[0.05em] text-sm font-bold text-[#E5E2E1] hover:text-[#00D2FF] transition-colors duration-300" 
