@@ -11,7 +11,7 @@ interface CircuitProps {
 
 const CircuitDetails: React.FC<CircuitProps> = ({ gp, circuit, length, turns, mapImage }) => {
   return (
-    <div className="bg-surface-container/60 backdrop-blur-2xl rounded-3xl border border-white/10 overflow-hidden group">
+    <div className="glass-panel rounded-3xl overflow-hidden group hover-glow reveal-anim">
       <div className="relative h-80 overflow-hidden">
         <img 
           src={mapImage} 

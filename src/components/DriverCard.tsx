@@ -10,7 +10,7 @@ interface DriverProps {
 
 const DriverCard = ({ name, number, points, image, accentColor }: DriverProps) => {
   return (
-    <div className={`driver-card group relative aspect-[3/4] bg-surface-container-low overflow-hidden rounded-sm cursor-pointer border border-transparent hover:border-${accentColor}/30 transition-all duration-300`}>
+    <div className={`driver-card group relative aspect-[3/4] bg-surface-container-low overflow-hidden rounded-sm cursor-pointer border border-transparent hover:border-${accentColor}/50 hover-glow reveal-anim transition-all duration-300`}>
       <img 
         className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" 
         src={image} 

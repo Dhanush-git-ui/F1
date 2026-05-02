@@ -8,7 +8,7 @@ interface TeamProps {
 }
 
 const TeamCard = ({ name, image, location, powerUnit, titles, drivers }: TeamProps) => (
-  <div className="group relative overflow-hidden bg-surface-container border border-outline-variant/10 rounded-sm hover:border-secondary-container/50 transition-all duration-500">
+  <div className="group relative overflow-hidden bg-surface-container border border-outline-variant/10 rounded-sm hover-glow reveal-anim">
     <div className="absolute inset-0 carbon-pattern opacity-20 pointer-events-none"></div>
     <div className="flex flex-col md:flex-row h-full">
       <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">

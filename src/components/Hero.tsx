@@ -4,14 +4,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex flex-col justify-center items-start pt-20 f1-grid-bg overflow-hidden p-8">
       <div className="relative z-10 w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8 max-w-2xl">
+        <div className="space-y-8 max-w-2xl reveal-anim">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/10 border border-primary-container/20 text-primary-container font-label text-[0.6875rem] uppercase tracking-widest font-bold">
             Peak Aerodynamics Active
           </div>
-          <h1 className="font-headline text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-glow-red text-on-surface">
+          <h1 className="font-headline text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-glow-red text-on-surface reveal-anim delay-100">
             Experience <br/> The <span className="text-primary-container">Speed</span> <br/> Of F1
           </h1>
-          <p className="font-body text-lg text-on-surface/70 max-w-lg">
+          <p className="font-body text-lg text-on-surface/70 max-w-lg reveal-anim delay-200">
             Dive into the high-frequency world of elite engineering. Track real-time telemetry and witness every millisecond.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
 
         {/* Live Countdown HUD */}
-        <div className="glass-panel p-8 rounded-sm relative overflow-hidden group">
+        <div className="glass-panel p-8 rounded-sm relative overflow-hidden group reveal-anim delay-300">
           <div className="space-y-6">
             <div className="flex justify-between items-end border-b border-white/10 pb-4">
               <div>

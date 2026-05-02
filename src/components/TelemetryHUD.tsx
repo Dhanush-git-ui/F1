@@ -1,5 +1,5 @@
 const TelemetryHUD = () => (
-  <div className="bg-surface-container-lowest/40 backdrop-blur-md p-12 rounded-sm border border-secondary-container/20 relative overflow-hidden mt-20">
+  <div className="bg-surface-container-lowest/40 backdrop-blur-md p-12 rounded-sm border border-secondary-container/20 relative overflow-hidden mt-20 hover-glow reveal-anim">
     <div className="absolute top-0 right-0 w-64 h-64 bg-secondary-container/5 blur-[100px] pointer-events-none"></div>
     <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center">
       <div className="lg:w-1/3">

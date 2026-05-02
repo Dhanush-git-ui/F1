@@ -1,33 +1,82 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-   html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #050505; /* Deeper black for premium feel */
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ::selection {
+    background: rgba(225, 6, 0, 0.3);
+    color: #fff;
+  }
 }
 
+@layer components {
   .carbon-pattern {
     background-color: #131313;
-    background-image: linear-gradient(45deg, #0e0e0e 25%, transparent 25%, transparent 75%, #0e0e0e 75%, #0e0e0e), 
-                      linear-gradient(45deg, #0e0e0e 25%, transparent 25%, transparent 75%, #0e0e0e 75%, #0e0e0e);
+    background-image: linear-gradient(45deg, #0a0a0a 25%, transparent 25%, transparent 75%, #0a0a0a 75%, #0a0a0a), 
+                      linear-gradient(45deg, #0a0a0a 25%, transparent 25%, transparent 75%, #0a0a0a 75%, #0a0a0a);
     background-size: 4px 4px;
     background-position: 0 0, 2px 2px;
   }
+  
   .glass-panel {
-    background: rgba(19, 19, 19, 0.6);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(225, 6, 0, 0.1);
+    background: rgba(15, 15, 15, 0.4);
+    backdrop-filter: blur(24px) saturate(150%);
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   }
+  
   .text-glow-red {
-    text-shadow: 0 0 15px rgba(221, 6, 0, 0.5);
+    text-shadow: 0 0 20px rgba(225, 6, 0, 0.6), 0 0 40px rgba(225, 6, 0, 0.2);
   }
+
+  .text-glow-blue {
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.6), 0 0 40px rgba(0, 210, 255, 0.2);
+  }
+  
   .f1-grid-bg {
-    background-image: linear-gradient(rgba(225, 6, 0, 0.05) 1px, transparent 1px), 
-                      linear-gradient(90deg, rgba(225, 6, 0, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  }
+
+  /* Premium reveal animation */
+  .reveal-anim {
+    animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+
+  @keyframes reveal {
+    0% { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+    100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+  }
+
+  /* Hover glow effect for cards */
+  .hover-glow {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(225, 6, 0, 0.15);
+    border-color: rgba(225, 6, 0, 0.3);
+    transform: translateY(-5px);
   }
 }

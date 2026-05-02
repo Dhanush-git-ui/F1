@@ -40,7 +40,7 @@ const Calendar: React.FC = () => {
         {races.map((race) => (
           <div 
             key={race.round} 
-            className={`group flex flex-col md:flex-row items-center justify-between p-6 rounded-2xl transition-all duration-300 border ${
+            className={`group flex flex-col md:flex-row items-center justify-between p-6 rounded-2xl transition-all duration-300 border hover-glow reveal-anim ${
               race.status === 'Completed' 
                 ? 'bg-surface-container/20 border-white/5 opacity-80' 
                 : 'bg-surface-container/40 border-glow-red/20 hover:border-glow-red/50 shadow-2xl'

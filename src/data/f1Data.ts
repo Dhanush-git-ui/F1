@@ -14,7 +14,7 @@ export const TEAMS_2026 = [
     powerUnit: "Red Bull Ford", 
     titles: 7, 
     drivers: ["Verstappen", "Hadjar"], 
-    image: "https://images.unsplash.com/photo-1542362567-b0526a62db15?auto=format&fit=crop&q=80&w=800",
+    image: "/assets/images/red_bull_f1_car_2026_1777741352078.png",
     color: "#3671C6"
   },
   { 
@@ -32,7 +32,7 @@ export const TEAMS_2026 = [
     powerUnit: "Mercedes", 
     titles: 8, 
     drivers: ["Norris", "Piastri"], 
-    image: "https://images.unsplash.com/photo-1502675135487-e971002a6adb?auto=format&fit=crop&q=80&w=800",
+    image: "/assets/images/mclaren_f1_car_2026_1777741377652.png",
     color: "#FF8000"
   },
   { 
@@ -50,7 +50,7 @@ export const TEAMS_2026 = [
     powerUnit: "Honda", 
     titles: 0, 
     drivers: ["Alonso", "Stroll"], 
-    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=800",
+    image: "/assets/images/aston_martin_f1_car_2026_1777741403970.png",
     color: "#229971"
   },
   { 
@@ -67,7 +67,7 @@ export const TEAMS_2026 = [
 
 export const DRIVERS_2026 = [
   { name: "Kimi Antonelli", number: 12, points: 68, accent: "primary-container", image: "/assets/images/antonelli_mercedes_2026_1777566751286.png" },
-  { name: "Max Verstappen", number: 1, points: 62, accent: "secondary-container", image: "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&q=80&w=400" },
+  { name: "Max Verstappen", number: 1, points: 62, accent: "secondary-container", image: "/assets/images/verstappen_f1_2026_1777741459602.png" },
   { name: "Lewis Hamilton", number: 44, points: 55, accent: "tertiary-container", image: "/assets/images/hamilton_ferrari_2026_1777566731372.png" },
   { name: "Charles Leclerc", number: 16, points: 48, accent: "error-container", image: "/assets/images/hamilton_ferrari_2026_1777566731372.png" },
   { name: "George Russell", number: 63, points: 42, accent: "primary-container", image: "/assets/images/antonelli_mercedes_2026_1777566751286.png" },
